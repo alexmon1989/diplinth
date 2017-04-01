@@ -1,0 +1,207 @@
+.rs-caption-1 {
+  border-top: none;
+  border-bottom: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  line-height: 64px;
+  font-size: 44px; }
+  .rs-caption-1:after, .rs-caption-1:before {
+    content: ""; }
+
+.rs-caption-2 {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+  @media screen and (max-height: 320px) and (max-width: 568px) {
+    .rs-caption-2 {
+      top: 110px !important; } }
+  .rs-caption-2:after {
+    height: 0;
+    width: 0; }
+
+@media screen and (max-height: 320px) and (max-width: 568px) {
+  .rs-caption-3 {
+    top: 160px !important; } }
+
+.rs-caption-3 p {
+  color: #fff; }
+
+.rs-caption-3 .sky-form.top {
+  margin-bottom: 0px;
+  border: none; }
+  @media screen and (min-width: 320px) {
+    .rs-caption-3 .sky-form.top {
+      min-width: 250px; } }
+  @media screen and (min-width: 640px) {
+    .rs-caption-3 .sky-form.top {
+      min-width: 450px; } }
+  @media screen and (min-width: 768px) {
+    .rs-caption-3 .sky-form.top {
+      min-width: 600px; } }
+  .rs-caption-3 .sky-form.top section.margin-bottom-0 {
+    margin-bottom: 0; }
+    @media screen and (max-height: 320px) and (max-width: 568px) {
+      .rs-caption-3 .sky-form.top section.margin-bottom-0 {
+        margin-bottom: 3px; } }
+  @media screen and (min-width: 768px) {
+    .rs-caption-3 .sky-form.top section.margin-bottom-36 {
+      margin-bottom: 36px; } }
+  @media screen and (max-width: 767px) {
+    .rs-caption-3 .sky-form.top section.margin-bottom-36 {
+      margin-bottom: 10px; } }
+  @media screen and (max-height: 320px) and (max-width: 568px) {
+    .rs-caption-3 .sky-form.top section.margin-bottom-36 {
+      margin-bottom: 3px; } }
+  .rs-caption-3 .sky-form.top header {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: none;
+    background: none; }
+    @media screen and (max-width: 639px) {
+      .rs-caption-3 .sky-form.top header {
+        font-size: 12px;
+        padding: 0px 30px; } }
+    @media screen and (min-width: 640px) {
+      .rs-caption-3 .sky-form.top header {
+        font-size: 16px;
+        padding: 0px 30px; } }
+    @media screen and (min-width: 768px) {
+      .rs-caption-3 .sky-form.top header {
+        font-size: 32px;
+        padding: 10px 30px; } }
+  .rs-caption-3 .sky-form.top fieldset {
+    background: none;
+    padding: 10px 30px 5px; }
+    @media screen and (max-width: 767px) {
+      .rs-caption-3 .sky-form.top fieldset {
+        padding: 0px 30px 5px; } }
+    @media screen and (max-width: 767px) {
+      .rs-caption-3 .sky-form.top fieldset input {
+        height: 15px;
+        font-size: 8px; } }
+    @media screen and (min-width: 768px) {
+      .rs-caption-3 .sky-form.top fieldset .textarea {
+        height: 136px; } }
+    @media screen and (max-width: 767px) {
+      .rs-caption-3 .sky-form.top fieldset textarea {
+        font-size: 8px;
+        line-height: 10px; } }
+    @media screen and (max-width: 767px) {
+      .rs-caption-3 .sky-form.top fieldset label {
+        font-size: 8px;
+        margin-bottom: 0;
+        line-height: 15px; } }
+    @media screen and (max-height: 320px) and (max-width: 568px) {
+      .rs-caption-3 .sky-form.top fieldset .label {
+        display: none; } }
+    @media screen and (max-width: 767px) {
+      .rs-caption-3 .sky-form.top fieldset .btn-u {
+        font-size: 8px;
+        padding: 2px 10px; } }
+  .rs-caption-3 .sky-form.top .label {
+    color: #fff; }
+  .rs-caption-3 .sky-form.top em {
+    color: #ee9393;
+    display: block;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 15px;
+    margin-top: -5px;
+    padding: 0 1px; }
+    @media screen and (max-width: 767px) {
+      .rs-caption-3 .sky-form.top em {
+        font-size: 8px; } }
+
+.rs-caption-3 .sky-form.top.submited .message {
+  background: none;
+  padding: 5px 30px; }
+  @media screen and (max-width: 767px) {
+    .rs-caption-3 .sky-form.top.submited .message p {
+      font-size: 8px;
+      line-height: 15px; } }
+  @media screen and (max-width: 767px) {
+    .rs-caption-3 .sky-form.top.submited .message i {
+      margin: 0 auto 5px;
+      width: 20px;
+      height: 20px;
+      font-size: 10px;
+      line-height: 20px; } }
+
+@media screen and (max-width: 767px) {
+  .rs-caption-3 .icon-prepend {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .rs-caption-3 .input .icon-prepend + input, .rs-caption-3 .textarea .icon-prepend + textarea {
+    padding-left: 5px; } }
+
+.rs-caption-3 .learnmore {
+  margin-top: 35px; }
+  @media screen and (max-height: 639px) {
+    .rs-caption-3 .learnmore {
+      display: none; } }
+  @media screen and (max-height: 768px) {
+    .rs-caption-3 .learnmore {
+      margin-top: 20px; } }
+
+.one-page-header .navbar-brand {
+  padding: 8px 15px 13px; }
+
+.log-reg-block.languages a {
+  padding: 17px 10px 13px; }
+
+.log-reg-block.languages a::before {
+  content: "|";
+  font-size: 12.5px;
+  left: 0; }
+
+.log-reg-block.languages a.rus::before {
+  content: ""; }
+
+.log-reg-block.languages .active a {
+  color: #72c02c !important; }
+
+#about {
+  background-image: url("../img/about/bg.png");
+  background-repeat: no-repeat;
+  border-top: none;
+  border-bottom: none; }
+  #about .title-v1 h1::after, #about .title-v1 h2::after {
+    display: none; }
+  #about .content-boxes-in-v3 img {
+    margin: 0 auto; }
+  #about .about-image {
+    padding-top: 113px; }
+    #about .about-image .parallax-quote {
+      background: transparent url("../img/parallax.jpg") repeat fixed 50% 0; }
+
+#products {
+  background-image: url("../img/products/bg.png");
+  background-repeat: no-repeat;
+  border-bottom: 100px solid #fff;
+  -o-border-image: url("../img/products/bg-bottom.png") 100% 0 100% 0;
+  border-image: url("../img/products/bg-bottom.png") 100% 0 100% 0; }
+  #products .title-v1.noline h1::after, #products .title-v1.noline h2::after {
+    display: none; }
+  #products .content-lg {
+    padding-top: 40px; }
+
+#contact.contacts-section {
+  background: #333 url("../img/contacts/bg.jpg") repeat fixed center center/cover; }
+  #contact.contacts-section::before {
+    background: none; }
+  #contact.contacts-section::after {
+    background: none;
+    content: none; }
+  #contact.contacts-section .title-v1 h1::after, #contact.contacts-section .title-v1 h2::after {
+    background-color: #fff; }
+  #contact.contacts-section .sky-form fieldset {
+    background: none; }
+  #contact.contacts-section .sky-form.submited .message {
+    background: none; }
+  #contact.contacts-section .map-class {
+    height: 500px; }
+
+/*# sourceMappingURL=custom.css.map */

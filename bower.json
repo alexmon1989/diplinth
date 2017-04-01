@@ -1,0 +1,20 @@
+{
+  "name": "diplinth",
+  "description": "",
+  "main": "",
+  "authors": [
+    "alexmon1989 <alex.mon1989@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/alexmon1989/diplinth",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lightbox2": "^2.8.2"
+  }
+}

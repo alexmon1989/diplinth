@@ -1,0 +1,307 @@
+// Fonts
+//@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+//@import "variables";
+
+// Bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.rs-caption-1 {
+  border-top: none;
+  border-bottom: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  line-height: 64px;
+  font-size: 44px;
+  &:after,
+  &:before {
+    content: "";
+  }
+}
+
+.rs-caption-2 {
+  @media screen and (max-height: 320px) and (max-width: 568px) {
+    top: 110px !important;
+  }
+
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  &:after {
+    height: 0;
+    width: 0;
+  }
+}
+
+.rs-caption-3 {
+  @media screen and (max-height: 320px) and (max-width: 568px) {
+    top: 160px !important;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .sky-form.top {
+    @media screen and (min-width: 320px) {
+      min-width: 250px;
+    }
+    @media screen and (min-width: 640px) {
+      min-width: 450px;
+    }
+    @media screen and (min-width: 768px) {
+      min-width: 600px;
+    }
+    margin-bottom: 0px;
+    border: none;
+    section.margin-bottom-0 {
+      @media screen and (max-height: 320px) and (max-width: 568px) {
+        margin-bottom: 3px;
+      }
+
+      margin-bottom: 0;
+    }
+    section.margin-bottom-36 {
+      @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+      }
+      @media screen and (max-width: 767px) {
+        margin-bottom: 10px;
+      }
+      @media screen and (max-height: 320px) and (max-width: 568px) {
+        margin-bottom: 3px;
+      }
+    }
+    header {
+      @media screen and (max-width: 639px) {
+        font-size: 12px;
+        padding: 0px 30px;
+      }
+      @media screen and (min-width: 640px) {
+        font-size: 16px;
+        padding: 0px 30px;
+      }
+      @media screen and (min-width: 768px) {
+        font-size: 32px;
+        padding: 10px 30px;
+      }
+
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      border-bottom: none;
+      background: none;
+    }
+    fieldset {
+      background: none;
+      padding: 10px 30px 5px;
+
+      @media screen and (max-width: 767px) {
+        padding: 0px 30px 5px;
+      }
+
+      input {
+        @media screen and (max-width: 767px) {
+          height: 15px;
+          font-size: 8px;
+        }
+      }
+
+      .textarea {
+        @media screen and (min-width: 768px) {
+          height: 136px;
+        }
+      }
+
+      textarea {
+        @media screen and (max-width: 767px) {
+          font-size: 8px;
+          line-height: 10px;
+        }
+      }
+
+      label {
+        @media screen and (max-width: 767px) {
+          font-size: 8px;
+          margin-bottom: 0;
+          line-height: 15px;
+        }
+      }
+
+      .label {
+        @media screen and (max-height: 320px) and (max-width: 568px) {
+          display: none;
+        }
+      }
+
+      .btn-u {
+        @media screen and (max-width: 767px) {
+          font-size: 8px;
+          padding: 2px 10px;
+        }
+      }
+    }
+    .label {
+      color: #fff;
+    }
+    em {
+      color: #ee9393;
+      display: block;
+      font-size: 11px;
+      font-style: normal;
+      line-height: 15px;
+      margin-top: -5px;
+      padding: 0 1px;
+
+      @media screen and (max-width: 767px) {
+        font-size: 8px;
+      }
+    }
+  }
+
+  .sky-form.top.submited .message {
+    background: none;
+    padding: 5px 30px;
+
+    p {
+      @media screen and (max-width: 767px) {
+        font-size: 8px;
+        line-height: 15px;
+      }
+    }
+
+    i {
+      @media screen and (max-width: 767px) {
+        margin: 0 auto 5px;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 20px;
+      }
+    }
+
+  }
+
+  .icon-prepend {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  .input .icon-prepend + input, .textarea .icon-prepend + textarea {
+    @media screen and (max-width: 767px) {
+      padding-left: 5px;
+    }
+  }
+
+  .learnmore {
+    margin-top: 35px;
+
+    @media screen and (max-height: 639px) {
+      display: none;
+    }
+
+    @media screen and (max-height: 768px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.one-page-header {
+  .navbar-brand {
+    padding: 8px 15px 13px;
+  }
+}
+
+.log-reg-block.languages {
+  a {
+    padding: 17px 10px 13px;
+  }
+  a::before {
+    content: "|";
+    font-size: 12.5px;
+    left: 0;
+  }
+  a.rus::before {
+    content: "";
+  }
+  .active {
+    a {
+      color: #72c02c !important;
+    }
+  }
+}
+
+#about {
+  background-image: url("../img/about/bg.png");
+  background-repeat: no-repeat;
+  border-top: none;
+  border-bottom: none;
+
+  .title-v1 {
+    h1::after, h2::after {
+      display: none;
+    }
+  }
+  .content-boxes-in-v3 img{
+    margin: 0 auto;
+  }
+
+  .about-image {
+    padding-top: 113px;
+
+    .parallax-quote {
+      background: rgba(0, 0, 0, 0) url("../img/parallax.jpg") repeat fixed 50% 0;
+    }
+  }
+}
+
+#products {
+  background-image: url("../img/products/bg.png");
+  background-repeat: no-repeat;
+
+  .title-v1.noline {
+    h1::after, h2::after {
+      display: none;
+    }
+  }
+
+  .content-lg {
+    padding-top: 40px;
+  }
+
+  border-bottom: 100px solid #fff;
+  border-image: url("../img/products/bg-bottom.png") 100% 0 100% 0;
+}
+
+#contact.contacts-section {
+  background: #333 url("../img/contacts/bg.jpg") repeat fixed center center / cover ;
+
+  &::before {
+    background: none;
+  }
+  &::after {
+    background: none;
+    content: none;
+  }
+
+  .title-v1 h1::after, .title-v1 h2::after {
+    background-color: #fff;
+  }
+
+  .sky-form {
+    fieldset {
+      background: none;
+    }
+  }
+
+  .sky-form.submited .message {
+    background: none;
+  }
+
+  .map-class {
+    height: 500px;
+  }
+}
