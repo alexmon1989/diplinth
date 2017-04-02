@@ -12,19 +12,19 @@
                     <li><i class="fa fa-home"></i> {{ $contactsSectionProperties->address }}</li>
                     @endif
                     @if($contactsSectionProperties->tel_1)
-                    <li><i class="fa fa-phone"></i>{{ $contactsSectionProperties->tel_1 }}</li>
+                    <li><a href="tel:{{ $contactsSectionProperties->tel_1 }}"><i class="fa fa-phone"></i>{{ $contactsSectionProperties->tel_1 }}</a></li>
                     @endif
                     @if($contactsSectionProperties->tel_2)
-                    <li><i class="fa fa-phone"></i>{{ $contactsSectionProperties->tel_2 }}</li>
+                    <li><a href="tel:{{ $contactsSectionProperties->tel_2 }}"><i class="fa fa-phone"></i>{{ $contactsSectionProperties->tel_2 }}</a></li>
                     @endif
                     @if($contactsSectionProperties->tel_3)
-                    <li><i class="fa fa-phone"></i>{{ $contactsSectionProperties->tel_3 }}</li>
+                    <li><a href="tel:{{ $contactsSectionProperties->tel_3 }}"><i class="fa fa-phone"></i>{{ $contactsSectionProperties->tel_3 }}</a></li>
                     @endif
                     @if($contactsSectionSpecs->email)
-                    <li><i class="fa fa-envelope"></i> <a href="{{ $contactsSectionSpecs->email }}">{{ $contactsSectionSpecs->email }}</a></li>
+                    <li><a href="mailto:{{ $contactsSectionSpecs->email }}"><i class="fa fa-envelope"></i> {{ $contactsSectionSpecs->email }}</a></li>
                     @endif
                     @if($contactsSectionSpecs->web_site)
-                    <li><i class="fa fa-globe"></i> <a href="http://{{ $contactsSectionSpecs->web_site }}" rel="nofollow">{{ $contactsSectionSpecs->web_site }}</a></li>
+                    <li><a href="http://{{ $contactsSectionSpecs->web_site }}" rel="nofollow">{{ $contactsSectionSpecs->web_site }}</a></li>
                     @endif
                 </ul>
             </div>
