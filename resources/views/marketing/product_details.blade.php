@@ -10,7 +10,7 @@
         <div class="cbp-l-inline-desc">{!! $product->description !!}</div>
 
         <p class="page-scroll">
-            <a href="#order-form" class="btn btn-u">{{ Lang::get('interface.sections.products.buy') }}</a>
+            <a href="#contact" class="btn btn-u">{{ Lang::get('interface.sections.products.buy') }}</a>
         </p>
     </div>
 </div>
