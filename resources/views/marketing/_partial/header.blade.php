@@ -43,6 +43,10 @@
                         <a href="#contact">{{ Lang::get('interface.menu.contact') }}</a>
                     </li>
                 </ul>
+
+                <div class="top-contact-block">
+                    <i class="fa fa-phone fa-1"></i> <a href="tel:{{ $contactsSectionProperties->tel_1 }}">{{ $contactsSectionProperties->tel_1 }}</a>
+                </div>
             </div>
         </div>
         <!-- /.navbar-collapse -->
