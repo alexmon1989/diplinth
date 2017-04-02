@@ -11,7 +11,7 @@ class ContactsFormPosted extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $subject = 'Сообщение клиента с сайта diplinth.com.ua';
+    public $subject = 'Сообщение клиента с сайта diplinth.com.ua';
 
     public $orderData;
 

@@ -11,7 +11,7 @@ class OrderSended extends Mailable
 {
     use Queueable, SerializesModels;
 
-    protected $subject = 'Оформлен заказ с сайта diplinth.com.ua';
+    public $subject = 'Оформлен заказ с сайта diplinth.com.ua';
 
     public $orderData;
 
