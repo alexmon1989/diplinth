@@ -56,7 +56,7 @@ return [
     */
 
     'from' => [
-        'address' => 'a.monastyretsky@ukrpatent.org',
+        'address' => env('MAIL_FROM', 'info@diplinth.com.ua'),
         'name' => 'DiPlinth Info',
     ],
 
