@@ -85,8 +85,13 @@
         <hr/>
 
         <div class="form-group">
-            <label for="form_email">Отправлять данные формы на следующий адрес *</label>
-            <input type="text" placeholder="Отправлять данные формы на следующий адрес" id="form_email" name="form_email" class="form-control" value="{{ old('form_email', Memory::get('contacts_form_email')) }}">
+            <label for="form_email">Отправлять данные формы заказа на следующий адрес *</label>
+            <input type="text" placeholder="Отправлять данные формы заказа на следующий адрес" id="form_email_orders" name="form_email_orders" class="form-control" value="{{ old('form_email_orders', Memory::get('orders_form_email')) }}">
+        </div>
+
+        <div class="form-group">
+            <label for="form_email">Отправлять данные контактной формы на следующий адрес *</label>
+            <input type="text" placeholder="Отправлять данные контактной формы на следующий адрес" id="form_email" name="form_email" class="form-control" value="{{ old('form_email', Memory::get('contacts_form_email')) }}">
         </div>
 
     </div><!-- /.box-body -->

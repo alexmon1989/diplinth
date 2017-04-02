@@ -167,13 +167,16 @@ class SectionsController extends Controller
         }
         $validationRules['lat'] = 'required|numeric';
         $validationRules['lng'] = 'required|numeric';
+        $validationRules['form_email_orders'] = 'required|email';
         $validationRules['form_email'] = 'required|email';
         $messages['lat.required'] = 'Поле "Широта" обязательно для заполнения';
         $messages['lat.numeric'] = 'Поле "Широта" должно содержать значение числового типа';
         $messages['lng.required'] = 'Поле "Долгота" обязательно для заполнения';
         $messages['lng.numeric'] = 'Поле "Долгота" должно содержать значение числового типа';
-        $messages['form_email.required'] = 'Поле "Отправлять данные формы на следующий адрес" обязательно для заполнения';
-        $messages['form_email.email'] = 'Поле "Отправлять данные формы на следующий адрес" должно содержать правильный E-Mail';
+        $messages['form_email_orders.required'] = 'Поле "Отправлять данные формы заказа на следующий адрес" обязательно для заполнения';
+        $messages['form_email_orders.email'] = 'Поле "Отправлять данные формы заказа на следующий адрес" должно содержать правильный E-Mail';
+        $messages['form_email.required'] = 'Поле "Отправлять данные контактной формы на следующий адрес" обязательно для заполнения';
+        $messages['form_email.email'] = 'Поле "Отправлять данные контактной формы на следующий адрес" должно содержать правильный E-Mail';
         $this->validate($request, $validationRules, $messages);
 
         // Сохранение данных
@@ -198,7 +201,8 @@ class SectionsController extends Controller
         }
         $section->save();
 
-        // E-Mail для формы
+        // E-Mail для форм
+        Memory::put('orders_form_email', $request->form_email_orders);
         Memory::put('contacts_form_email', $request->form_email);
 
         return redirect()->back()->with('success', 'Данные успешно сохранены');
