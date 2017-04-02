@@ -44,11 +44,15 @@
 	<!-- CSS Footer -->
 	<link rel="stylesheet" href="unify/css/footers/footer-v7.css">
 
+	<!-- Styles for tel btn -->
+	<link rel="stylesheet" href="unify/css/tel-btn.css">
+
 	<!-- CSS Customization -->
 	<link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
+<a href="tel:{{ $contactsSectionProperties->tel_1 }}" id="popup__toggle"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
 
 	<!--=== Header ===-->
 	@include('marketing._partial.header')
@@ -69,6 +73,7 @@
 	<!-- Contact Section -->
 	@include('marketing._partial.contacts')
 	<!-- End Contact Section -->
+
 
 	<!-- JS Global Compulsory -->
 	<script src="unify/plugins/jquery/jquery.min.js"></script>
