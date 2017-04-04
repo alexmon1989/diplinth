@@ -36,6 +36,8 @@ return [
             'message' => 'Message',
             'send' => 'Send message',
             'success_message' => 'Your message was successfully sent. Our managers will contact you shortly!',
+            'collaboration_with_us' => 'Collaboration with us',
+            'close' => 'Close',
         ],
 
 

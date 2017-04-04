@@ -197,6 +197,7 @@ class SectionsController extends Controller
                 'tel_1' => trim($request->get('tel_1_' . $lang)),
                 'tel_2' => trim($request->get('tel_2_' . $lang)),
                 'tel_3' => trim($request->get('tel_3_' . $lang)),
+                'collaboration' => trim($request->get('collaboration_' . $lang)),
             ]);
         }
         $section->save();

@@ -74,6 +74,10 @@
 	@include('marketing._partial.contacts')
 	<!-- End Contact Section -->
 
+	<!-- Collaboration Modal -->
+	@include('marketing._partial.collaboration')
+	<!-- End Collaboration Modal -->
+
 
 	<!-- JS Global Compulsory -->
 	<script src="unify/plugins/jquery/jquery.min.js"></script>

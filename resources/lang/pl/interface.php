@@ -35,6 +35,8 @@ return [
             'email' => 'E-mail',
             'message' => 'Wyślij wiadomość',
             'success_message' => 'Twój wniosek został przesłany pomyślnie. Nasi menedżerowie będą wkrótce skontaktuje się z Tobą!',
+            'collaboration_with_us' => 'Współpraca z nami',
+            'close' => 'Anulować',
         ],
 
     ],

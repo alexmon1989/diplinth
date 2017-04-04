@@ -48,6 +48,11 @@
                         <label for="tel_3_{{ $lang }}">Телефон 3</label>
                         <input type="text" placeholder="Телефон 3" id="tel_3_{{ $lang }}" name="tel_3_{{ $lang }}" class="form-control" value="{{ old('tel_3_'.$lang, isset($section) ? $sectionProperties[$lang]->tel_3 : '') }}">
                     </div>
+
+                    <div class="form-group">
+                        <label for="collaboration_{{ $lang }}">Текст для условий сотрудничества</label>
+                        <textarea class="form-control textarea" name="collaboration_{{ $lang }}" id="collaboration_{{ $lang }}" cols="30" rows="5">{!! old('collaboration_'.$lang, (isset($section) and isset($sectionProperties[$lang]->collaboration)) ? $sectionProperties[$lang]->collaboration : '') !!}</textarea>
+                    </div>
                 </div>
                 <!-- /.tab-pane -->
 

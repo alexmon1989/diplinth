@@ -99,6 +99,7 @@ class SectionsTableSeeder extends Seeder
             'tel_1'             => '+38 050-381-77-27',
             'tel_2'             => '+38 067-381-77-27',
             'tel_3'             => '',
+            'collaboration'     => '',
         ]);
 
         $contacts->translateOrNew('uk')->properties = json_encode([
@@ -108,6 +109,7 @@ class SectionsTableSeeder extends Seeder
             'tel_1'             => '+38 050-381-77-27',
             'tel_2'             => '+38 067-381-77-27',
             'tel_3'             => '',
+            'collaboration'     => '',
         ]);
 
         $contacts->translateOrNew('en')->properties = json_encode([
@@ -117,6 +119,7 @@ class SectionsTableSeeder extends Seeder
             'tel_1'             => '+38 050-381-77-27',
             'tel_2'             => '+38 067-381-77-27',
             'tel_3'             => '',
+            'collaboration'     => '',
         ]);
 
         $contacts->translateOrNew('pl')->properties = json_encode([
@@ -126,6 +129,7 @@ class SectionsTableSeeder extends Seeder
             'tel_1'             => '+38 050-381-77-27',
             'tel_2'             => '+38 067-381-77-27',
             'tel_3'             => '',
+            'collaboration'     => '',
         ]);
         $contacts->save();
 
