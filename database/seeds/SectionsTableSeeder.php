@@ -102,7 +102,7 @@ class SectionsTableSeeder extends Seeder
         ]);
 
         $contacts->translateOrNew('uk')->properties = json_encode([
-            'title'             => 'Контакты',
+            'title'             => 'Контакти',
             'under_title_text'  => 'Ви завжди зможете зв\'язатися з нами по одному з телефонів нижче, <br> електронній пошті або написати нам повідомлення прямо з сайту.',
             'address'           => 'Україна, Київ',
             'tel_1'             => '+38 050-381-77-27',
@@ -111,7 +111,7 @@ class SectionsTableSeeder extends Seeder
         ]);
 
         $contacts->translateOrNew('en')->properties = json_encode([
-            'title'             => 'Контакты',
+            'title'             => 'Contacts',
             'under_title_text'  => 'You can always contact us through one of the phone numbers below, <br> e-mail or send us a message directly from the site.',
             'address'           => 'Ukraine, Kiev',
             'tel_1'             => '+38 050-381-77-27',
@@ -120,7 +120,7 @@ class SectionsTableSeeder extends Seeder
         ]);
 
         $contacts->translateOrNew('pl')->properties = json_encode([
-            'title'             => 'Контакты',
+            'title'             => 'Kontakt',
             'under_title_text'  => 'Zawsze możesz skontaktować się z nami za pośrednictwem jednego z poniższych numerów telefonów, <br>e-mail lub wysłać do nas wiadomość bezpośrednio ze strony.',
             'address'           => 'Ukraina, Kijów',
             'tel_1'             => '+38 050-381-77-27',
