@@ -184,6 +184,7 @@ class SectionsController extends Controller
         $section->specs = json_encode([
             'email' => trim($request->email),
             'web_site' => str_replace('http://', '', trim($request->web_site)),
+            'facebook' => trim($request->facebook),
             'map_marker_position' => [
                 'lat' => $request->lat,
                 'lng' => $request->lng,

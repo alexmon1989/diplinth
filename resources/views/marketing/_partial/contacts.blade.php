@@ -26,6 +26,9 @@
                     @if($contactsSectionSpecs->web_site)
                     <li><a href="http://{{ $contactsSectionSpecs->web_site }}" rel="nofollow">{{ $contactsSectionSpecs->web_site }}</a></li>
                     @endif
+                    @if($contactsSectionSpecs->facebook)
+                    <li><a target="_blank" href="https://{{ $contactsSectionSpecs->facebook }}"><i class="fa fa-facebook"></i>{{ $contactsSectionSpecs->facebook }}</a></li>
+                    @endif
                 </ul>
                 <a class="collaboration" style="color: #72c02c" data-toggle="modal" data-target="#myModal" href="#collaboration"><strong>{{ Lang::get('interface.sections.contacts.collaboration_with_us') }}</strong></a>
             </div>

@@ -73,6 +73,11 @@
             <input type="text" placeholder="Веб-сайт" id="web_site" name="web_site" class="form-control" value="{{ old('web_site', isset($section) ? $sectionSpecs->web_site : '') }}">
         </div>
 
+        <div class="form-group">
+            <label for="facebook">Facebook</label>
+            <input type="text" placeholder="Facebook" id="facebook" name="facebook" class="form-control" value="{{ old('facebook', (isset($section) and isset($sectionSpecs->facebook)) ? $sectionSpecs->facebook : '') }}">
+        </div>
+
         <hr/>
 
         <h4>Метка на карте</h4>
