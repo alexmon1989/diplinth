@@ -97,7 +97,6 @@
 	<!-- JS Page Level-->
 	<script src="unify/js/one.app.js"></script>
 	<script src="unify/js/forms/contact.js"></script>
-	<script src="unify/js/forms/order.js"></script>
 	<script src="unify/js/plugins/revolution-slider.js"></script>
 	<script src="unify/js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
 
