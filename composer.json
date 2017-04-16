@@ -15,7 +15,8 @@
         "intervention/image": "^2.3",
         "orchestra/memory": "~3.3",
 		"ext-gd": "*",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "greggilbert/recaptcha": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

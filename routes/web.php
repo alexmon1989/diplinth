@@ -29,10 +29,10 @@ Route::group(
     }
 );
 
-Route::post('/make-order', [
+/*Route::post('/make-order', [
     'uses' => 'Marketing\MainController@postOrderForm',
     'as' => 'marketing.make_order',
-]);
+]);*/
 
 Route::post('/send-message-contacts-form', [
     'uses' => 'Marketing\MainController@postContactForm',

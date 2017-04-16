@@ -112,10 +112,9 @@ var ContactForm = function () {
 	                    required: true,
 	                    minlength: 10
 	                },
-	                captcha:
+                    'g-recaptcha-response':
 	                {
-	                    required: true,
-	                    remote: 'assets/plugins/sky-forms/version-2.0.1/captcha/process.php'
+	                    required: true
 	                }
 	            },
 
@@ -134,7 +133,10 @@ var ContactForm = function () {
 	                    success: function()
 	                    {
 	                        $("#sky-form3").addClass('submited');
-	                    }
+	                    },
+						error: function () {
+                            $('#sky-form3 button[type="submit"]').attr('disabled', false);
+                        }
 	                });
 	            },
 

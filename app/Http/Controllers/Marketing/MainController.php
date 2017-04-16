@@ -69,7 +69,7 @@ class MainController extends Controller
     /**
      * Обработчик запроса на отправку контактной формы
      */
-    public function postContactForm(Request $request)
+    public function postContactForm(Requests\SendContactsFormRequest $request)
     {
         Mail::to(Memory::get('contacts_form_email', 'diplinth@ukr.net'))->send(new ContactsFormPosted($request->all()));
 

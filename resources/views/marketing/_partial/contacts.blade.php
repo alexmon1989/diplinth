@@ -73,6 +73,13 @@
                             </div>
                         </div>
 
+                        <div class="row">
+                            <div class="col-md-11 margin-bottom-20 col-md-offset-0">
+                                {!! Recaptcha::render([ 'lang' => App::getLocale() ]) !!}
+                            </div>
+                        </div>
+
+
                         <p><button type="submit" class="btn-u btn-brd btn-brd-hover btn-u-dark">{{ Lang::get('interface.sections.contacts.send') }}</button></p>
                     </fieldset>
 

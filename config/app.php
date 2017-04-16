@@ -173,6 +173,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Orchestra\Memory\MemoryServiceProvider::class,
         Orchestra\Memory\CommandServiceProvider::class,
+        Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -239,6 +240,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Memory' => Orchestra\Support\Facades\Memory::class,
+        'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
 
     ],
 
