@@ -104,7 +104,6 @@
 		jQuery(document).ready(function() {
 			App.init();
 			App.initParallaxBg();
-			OrderForm.initOrderForm();
 			ContactForm.initContactForm();
 			RevolutionSlider.initRSfullScreen();
 			initMap($("#map").data('lat'), $("#map").data('lng'));
