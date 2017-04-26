@@ -30,7 +30,6 @@
                     <li><a target="_blank" href="https://{{ $contactsSectionSpecs->facebook }}"><i class="fa fa-facebook"></i>{{ $contactsSectionSpecs->facebook }}</a></li>
                     @endif
                 </ul>
-                <a class="collaboration" style="color: #72c02c" data-toggle="modal" data-target="#myModal" href="#collaboration"><strong>{{ Lang::get('interface.sections.contacts.collaboration_with_us') }}</strong></a>
             </div>
 
             <div class="col-md-6">

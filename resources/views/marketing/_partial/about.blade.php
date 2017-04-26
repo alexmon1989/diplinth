@@ -22,6 +22,9 @@
                 <div class="parallax-quote-in">
                     <p>{!! $aboutSectionProperties->parallax_text !!}</p>
                     <small>- DiPlinth -</small>
+                    <p class="text-center collaboration">
+                        <a class="btn-u btn-brd btn-brd-hover btn-u-light" data-toggle="modal" data-target="#myModal" href="#collaboration">{{ Lang::get('interface.sections.contacts.collaboration_with_us') }}</a>
+                    </p>
                 </div>
             </div>
         </div>

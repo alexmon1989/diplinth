@@ -136,3 +136,11 @@
 .top-contact-block {
   margin-right: 50px;
 }
+
+p.collaboration {
+  margin-top: 20px;
+}
+
+p.collaboration::after, p.collaboration::before {
+  content: "";
+}
