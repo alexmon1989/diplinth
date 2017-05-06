@@ -17,6 +17,7 @@ elixir(mix => {
     //   .webpack('app.js');
     mix.copy('resources/assets/unify-1.9.6', 'public/unify')
         .copy('resources/assets/img', 'public/img')
+        .copy('resources/assets/js/order.js', 'public/js/order.js')
         .copy('resources/bower_components/AdminLte/bootstrap', 'public/adminlte/bootstrap')
         .copy('resources/bower_components/AdminLte/dist', 'public/adminlte/dist')
         .copy('resources/bower_components/AdminLte/plugins', 'public/adminlte/plugins')

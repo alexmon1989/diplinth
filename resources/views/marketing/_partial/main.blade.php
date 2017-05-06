@@ -32,8 +32,6 @@
                         data-captionhidden="off"
                         style="z-index: 6">
                         {!! $mainSectionProperties->under_title_text !!}
-
-                        <a id="order-form"></a>
                     </div>
 
                     <!-- LAYER -->

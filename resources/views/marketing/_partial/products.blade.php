@@ -95,4 +95,6 @@
             </div>
         </div>
     </div>
+
+    @include('marketing._partial.order_modal')
 </section>

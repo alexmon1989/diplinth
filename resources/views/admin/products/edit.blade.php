@@ -28,3 +28,7 @@
     </div><!-- /.box-footer-->
 </div><!-- /.box -->
 @stop
+
+@section('script')
+    <script src="{{ asset('adminlte/dist/js/product_heights.js') }}"></script>
+@stop

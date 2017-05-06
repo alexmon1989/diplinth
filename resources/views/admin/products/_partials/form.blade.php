@@ -40,6 +40,58 @@
             <p class="help-block">Автоматически будет приведено к размеру <strong>700 х 467 пикселей</strong>.</p>
         </div>
 
+        @if(isset($product))
+        <div class="form-group">
+            <label>Высота товара</label>
+
+            <table class="table table-bordered">
+                <tr>
+                    <td><strong>Значение, мм</strong></td>
+                    <td><strong>Стоимость, грн</strong></td>
+                    <td><strong>Доступно (отображать на сайте)</strong></td>
+                    <td></td>
+                </tr>
+                @foreach($product->heights as $height)
+                    <tr>
+                        <td>{{ $height->value }}</td>
+                        <td>{{ $height->price }}</td>
+                        <td>
+                            @if($height->available)
+                                <a href="#" class="toggle_available" data-height_id="{{ $height->id }}"><strong>Да</strong></a>
+                            @else
+                                <a href="#" class="toggle_available" data-height_id="{{ $height->id }}">Нет</a>
+                            @endif
+                        </td>
+                        <td>
+                            <a href="#" class="delete_height" data-height_id="{{ $height->id }}" title="Удалить"><i class="fa fa-trash" aria-hidden="true"></i> Удалить</a>
+                        </td>
+                    </tr>
+                @endforeach
+                <tr>
+                    <td>
+                        <input placeholder="Значение, мм" id="height_value" type="number" required="required" class="form-control">
+                    </td>
+                    <td>
+                        <input placeholder="Стоимость, грн" id="height_price" type="number" required="required" class="form-control">
+                    </td>
+                    <td>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="1" id="height_available"> Да
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="hidden" id="product_id" value="{{ $product->id }}">
+                        <button type="button" class="btn btn-primary" id="add_height">Добавить</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        @endif
+
+
+
         <div class="alert alert-info alert-dismissible">
             <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
             <h4><i class="icon fa fa-info"></i> Внимание!</h4>

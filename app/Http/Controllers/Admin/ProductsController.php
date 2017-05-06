@@ -9,6 +9,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\Facades\Image;
+use App\ProductHeight;
 
 class ProductsController extends Controller
 {
@@ -94,5 +95,49 @@ class ProductsController extends Controller
         $product->delete();
 
         return redirect()->back()->with('success', 'Продукт успешно удалён.');
+    }
+
+    /**
+     * Удаляет высоту продукта.
+     *
+     * @param ProductHeight $height
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function delete_height(ProductHeight $height)
+    {
+        $height->delete();
+        return response()->json(['success' => 1]);
+    }
+
+    /**
+     * Создаёт высоту продукта.
+     *
+     * @param Requests\AddProductHeightRequest $request
+     * @param Product $product
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function add_height(Requests\AddProductHeightRequest $request, Product $product)
+    {
+        $height = $product->heights()->create([
+            'value' => $request->value,
+            'price' => $request->price,
+            'available' => $request->input('available', false),
+        ]);
+
+        return response()->json(['success' => 1, 'height' => $height]);
+    }
+
+    /**
+     * Меняет значение поля available на объекта height на противоположное.
+     *
+     * @param ProductHeight $height
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function toggle_height_available(ProductHeight $height)
+    {
+        $height->available = !$height->available;
+        $height->save();
+
+        return response()->json(['success' => 1, 'height' => $height]);
     }
 }

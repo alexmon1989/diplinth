@@ -11,6 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
     <meta name="keywords" content="{{ Memory::get('site.keywords_' . App::getLocale()) }}">
 	<meta name="description" content="{{ Memory::get('site.description_' . App::getLocale()) }}">
+	<meta name="csrf-token" content="{{ csrf_token() }}">
 
 	@foreach(['ru', 'uk', 'en', 'pl'] as $lang)
         @if($lang != App::getLocale())
@@ -100,6 +101,8 @@
 	<script src="unify/js/plugins/revolution-slider.js"></script>
 	<script src="unify/js/plugins/cube-portfolio/cube-portfolio-lightbox.js"></script>
 
+	<script src="js/order.js"></script>
+
 	<script>
 		jQuery(document).ready(function() {
 			App.init();
@@ -107,6 +110,7 @@
 			ContactForm.initContactForm();
 			RevolutionSlider.initRSfullScreen();
 			initMap($("#map").data('lat'), $("#map").data('lng'));
+			Order.init();
 		});
 	</script>
 	<!--[if lt IE 9]>

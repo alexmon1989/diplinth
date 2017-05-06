@@ -26,6 +26,21 @@ Route::group(
             'uses' => 'Marketing\MainController@productDetails',
             'as' => 'marketing.product_details',
         ]);
+
+        Route::get('/product-order-form/{product}', [
+            'uses' => 'Marketing\MainController@productOrderForm',
+            'as' => 'marketing.product_order_form',
+        ]);
+
+        Route::post('/make-order/{product}', [
+            'uses' => 'Marketing\MainController@makeOrder',
+            'as' => 'marketing.make_order',
+        ]);
+
+        Route::get('/make-order/{product}', [
+            'uses' => 'Marketing\MainController@makeOrder',
+            'as' => 'marketing.make_order',
+        ]);
     }
 );
 
@@ -87,6 +102,21 @@ Route::group(
         Route::get('/sections/products/list/delete/{product}', [
             'uses' => 'Admin\ProductsController@delete',
             'as' => 'admin.sections.products.delete',
+        ]);
+
+        Route::get('/sections/products/delete-height/{height}', [
+            'uses' => 'Admin\ProductsController@delete_height',
+            'as' => 'admin.sections.products.delete_height',
+        ]);
+
+        Route::post('/sections/products/add-height/{product}', [
+            'uses' => 'Admin\ProductsController@add_height',
+            'as' => 'admin.sections.products.add_height',
+        ]);
+
+        Route::get('/sections/products/toggle-height-available/{height}', [
+            'uses' => 'Admin\ProductsController@toggle_height_available',
+            'as' => 'admin.sections.products.toggle_height_available',
         ]);
 
         Route::get('/sections/products/fixing', [

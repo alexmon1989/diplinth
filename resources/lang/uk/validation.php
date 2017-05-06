@@ -111,7 +111,13 @@ return [
     */
 
     'attributes'           => [
-        //
+        'username' => 'Ваше ім\'я',
+        'useremail' => 'Ваш e-mail',
+        'userphone' => 'Ваш телефон',
+        'height' => 'Висота плінтусу',
+        'count' => 'Кількість погонних метрів',
     ],
+
+    'recaptcha' => 'Поле :attribute заповнено не коректно.',
 
 ];

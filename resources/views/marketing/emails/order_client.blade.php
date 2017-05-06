@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>DiPlinth | Заказ с сайта</title>
+<title>DiPlinth | Заказ плинтуса</title>
 
 <style type="text/css">
     .ReadMsgBody {width: 100%; background-color: #ffffff;}
@@ -59,21 +59,26 @@
                         <table width="70%"  border="0" cellpadding="0" cellspacing="0" align="center" >
                             <tr>
                                 <td class="center" style="font-size: 16px; color: #303030; font-weight: bold; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 25px; vertical-align: middle; padding: 20px 50px 0px; " >
-                                Оформлен заказ с сайта
+                                    {!! Lang::get('interface.sections.products.order_client_message') !!}
                                 </td>
                             </tr>
                             <tr>
                                 <td class="center" style="font-size: 14px; color: #303030; font-family: Arial, Helvetica, sans-serif; line-height: 25px; vertical-align: middle; padding: 20px 50px 20px; " >
-                                    Имя заказчика: <strong>{{ $username }}</strong><br/>
-                                    Телефон заказчика: <strong>{{ $userphone }}</strong><br/>
+                                    {{ Lang::get('interface.sections.products.username') }}: <strong>{{ $username }}</strong><br/>
+                                    {{ Lang::get('interface.sections.products.userphone') }}: <strong>{{ $userphone }}</strong><br/>
                                     @if($useremail)
-                                    E-Mail заказчика: <strong><a href="mailto:{{ $useremail }}">{{ $useremail }}</a></strong><br/>
+                                    {{ Lang::get('interface.sections.products.useremail') }}: <strong><a href="mailto:{{ $useremail }}">{{ $useremail }}</a></strong><br/>
                                     @endif
-                                    Товар: <strong>{{ $product_title_ru }}</strong><br/>
-                                    Высота: <strong>{{ $height }} мм</strong><br/>
-                                    Цена 1 м.п.: <strong>{{ $price }} грн</strong><br/>
-                                    Количество погонных метров: <strong>{{ $count }}</strong><br/>
-                                    Сумма к оплате: <strong>{{ $total_sum }} грн</strong>
+                                    {{ Lang::get('interface.sections.products.product') }}: <strong>{{ $product->title }}</strong><br/>
+                                    {{ Lang::get('interface.sections.products.height') }}: <strong>{{ $height }} {{ Lang::get('interface.sections.products.mm') }}</strong><br/>
+                                    {{ Lang::get('interface.sections.products.price') }} 1 {{ Lang::get('interface.sections.products.linear_meter') }}: <strong>{{ $price }} {{ Lang::get('interface.sections.products.uah') }}</strong><br/>
+                                    {{ Lang::get('interface.sections.products.count_of_linear_metres') }}: <strong>{{ $count }}</strong><br/>
+                                    {{ Lang::get('interface.sections.products.total_sum') }}: <strong>{{ $total_sum }} {{ Lang::get('interface.sections.products.uah') }}</strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="center" style="font-size: 16px; color: #303030; font-weight: bold; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 25px; vertical-align: middle; padding: 20px 50px 0px; " >
+                                    {{ Lang::get('interface.sections.products.order_success_message') }}
                                 </td>
                             </tr>
                         </table><!--End Top-->
@@ -87,7 +92,7 @@
             <table width="700"  border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth"  >
                 <tr>
                     <td  bgcolor="#ffffff" class="center" style="font-size: 12px; color: #687074; font-weight: bold; text-align: center; font-family: Arial, Helvetica, sans-serif; line-height: 25px; vertical-align: middle; padding: 20px 50px 0px 50px; " >
-                        Все права защищены © DiPlinth {{ date('Y') }}
+                        {{ Lang::get('interface.copyright') }} © DiPlinth {{ date('Y') }}
                     </td>
                 </tr>
             </table>

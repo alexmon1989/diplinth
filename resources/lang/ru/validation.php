@@ -176,7 +176,11 @@ return [
     */
 
     'attributes'           => [
-        //
+        'username' => 'Ваше имя',
+        'useremail' => 'Ваш e-mail',
+        'userphone' => 'Ваш телефон',
+        'height' => 'Высота плинтуса',
+        'count' => 'Количество погонных метров',
     ],
 
     'recaptcha' => 'Поле :attribute заполенено не корректно.',

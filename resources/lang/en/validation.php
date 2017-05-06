@@ -110,6 +110,14 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes'           => [
+        'username' => 'Your name',
+        'useremail' => 'Your e-mail',
+        'userphone' => 'Your phone',
+        'height' => 'Height',
+        'count' => 'Count of linear metres',
+    ],
+
+    'recaptcha' => 'Field :attribute is invalid.',
 
 ];

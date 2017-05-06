@@ -111,7 +111,13 @@ return [
     */
 
     'attributes'           => [
-        //
+        'username' => 'Imię i nazwisko',
+        'useremail' => 'Twój e-mail',
+        'userphone' => 'Twój telefon',
+        'height' => 'Wysokość cokołu',
+        'count' => 'Ilość metrów bieżących',
     ],
+
+    'recaptcha' => 'Pole :attribute wypełnione niepoprawnie.',
 
 ];
