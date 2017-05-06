@@ -22,6 +22,7 @@ return [
 
         'products' => [
             'title' => 'Nasze produkty',
+            'under_title_text' => 'Aby wyświetlić szczegółowe informacje na cokole i jego porządku, kliknij na kolor lubisz',
             'novelty' => 'Nowość',
             'novelty_undertext' => 'Zakres ten jest regularnie aktualizowany. <br /> Sprzedaży, następujące rodzaje cokołu',
             'in_stock' => 'Dostępny',

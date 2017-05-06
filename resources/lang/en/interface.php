@@ -22,6 +22,7 @@ return [
 
         'products' => [
             'title' => 'Our products',
+            'under_title_text' => 'To view detailed information on the skirting board and its order, click on the color you like',
             'novelty' => 'Novelty',
             'novelty_undertext' => 'The range is regularly updated. <br /> Sales, the following types of plinth',
             'in_stock' => 'In stock',
