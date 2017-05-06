@@ -69,10 +69,10 @@
                 @endforeach
                 <tr>
                     <td>
-                        <input placeholder="Значение, мм" id="height_value" type="number" required="required" class="form-control">
+                        <input placeholder="Значение, мм" id="height_value" type="number" class="form-control">
                     </td>
                     <td>
-                        <input placeholder="Стоимость, грн" id="height_price" type="number" required="required" class="form-control">
+                        <input placeholder="Стоимость, грн" id="height_price" type="number" class="form-control">
                     </td>
                     <td>
                         <div class="checkbox">
