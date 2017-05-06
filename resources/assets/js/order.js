@@ -27,6 +27,12 @@ var Order = function () {
             }).on('click', '#confirm-order', function() {
                 Order.sendOrder();
             });
+
+            $('#modal_order').on('show.bs.modal', function () {
+                $("#popup__toggle").hide();
+            }).on('hidden.bs.modal', function () {
+                $("#popup__toggle").show();
+            });
         },
 
         calculatePrice: function () {
