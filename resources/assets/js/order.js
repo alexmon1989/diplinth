@@ -46,7 +46,7 @@ var Order = function () {
         sendOrder: function() {
             var url = $(location).attr('href');
             var segments = url.split( '/' );
-            var lang = segments[3] || 'ru';
+            var lang = segments[3].substr(0, 2) || 'ru';
 
             $("#confirm-order").prop("disabled", true).addClass('disabled');
             $("#loading").show();
