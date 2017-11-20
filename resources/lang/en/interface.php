@@ -22,7 +22,7 @@ return [
 
         'products' => [
             'title' => 'Our products',
-            'under_title_text' => 'To view detailed information on the skirting board and its order, click on the color you like. <br><span class="color-red">Attention, action:</span> the cost is only <strong>50 UAH / l.m.</strong>!',
+            'under_title_text' => 'To view detailed information on the skirting board and its order, click on the color you like. <br><span class="color-red">Attention, action:</span> the cost is only <strong>40 UAH / l.m.</strong>!',
             'novelty' => 'Novelty',
             'novelty_undertext' => 'The range is regularly updated. <br /> Sales, the following types of plinth',
             'in_stock' => 'In stock',
