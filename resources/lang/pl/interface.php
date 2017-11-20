@@ -22,7 +22,7 @@ return [
 
         'products' => [
             'title' => 'Nasze produkty',
-            'under_title_text' => 'Aby wyświetlić szczegółowe informacje na cokole i jego porządku, kliknij na kolor lubisz',
+            'under_title_text' => 'Aby wyświetlić szczegółowe informacje na cokole i jego porządku, kliknij na kolor lubisz.<br><span class="color-red">Uwaga, działanie:</span> koszt to tylko <strong>50 UAH / mb.</strong>!',
             'novelty' => 'Nowość',
             'novelty_undertext' => 'Zakres ten jest regularnie aktualizowany. <br /> Sprzedaży, następujące rodzaje cokołu',
             'in_stock' => 'Dostępny',

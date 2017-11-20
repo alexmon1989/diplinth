@@ -3,7 +3,7 @@
     <div class="container content-lg">
         <div class="title-v1 noline">
             <h2>{{ Lang::get('interface.sections.products.title') }}</h2>
-            <p>{{ Lang::get('interface.sections.products.under_title_text') }}</p>
+            <p>{!! Lang::get('interface.sections.products.under_title_text') !!}</p>
         </div>
 
         <div class="cube-portfolio">
